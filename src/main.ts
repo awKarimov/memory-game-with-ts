@@ -260,8 +260,7 @@ restartBtn.addEventListener("click", () => {
 });
 
 newGameBtn.addEventListener("click", () => {
-  const ok = confirm("Yangi o'yin boshlamoqchimisiz?");
-  if (!ok) return;
+  if (!confirm("Yangi o'yin boshlamoqchimisiz?")) return;
 
   stopTimer();
   gamePage.classList.add("hidden");
