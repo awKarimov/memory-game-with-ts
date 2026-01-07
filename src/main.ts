@@ -227,7 +227,10 @@ function checkWin() {
     stopTimer();
     setTimeout(() => {
       alert(
-        `🎉 Siz yutdingiz!\n\nMoves: ${moves}\nTime: ${elTime.textContent}`
+        `🎉 Siz yutdingiz!
+        
+        Moves: ${moves}
+        Time: ${elTime.textContent}`
       );
     }, 300);
   }
