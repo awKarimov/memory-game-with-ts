@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <!-- ============ STARTER PAGE ============ -->
+    <section class="starter-page">
+      <div class="starter-wrapper">
+        <h1>Memory</h1>
+
+        <div class="gameSelection">
+          <div class="theme">
+            <h3>Select Theme</h3>
+            <div class="buttons">
+              <button class="btns">Numbers</button>
+              <button class="btns">Icons</button>
+            </div>
+          </div>
+
+          <div class="number-of-players">
+            <h3>Number of Players</h3>
+            <div class="buttons">
+              <button class="btns">1</button>
+              <button class="btns">2</button>
+              <button class="btns">3</button>
+              <button class="btns">4</button>
+            </div>
+          </div>
+
+          <div class="grid-size">
+            <h3>Grid Size</h3>
+            <div class="buttons">
+              <button class="btns">4x4</button>
+              <button class="btns">6x6</button>
+            </div>
+          </div>
+
+          <button class="start-game">Start Game</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GAME PAGE ============ -->
+    <section class="game-page hidden">
+      <header class="game-header">
+        <h1>memory</h1>
+        <div class="controls">
+          <button id="restartBtn" class="restart">Restart</button>
+          <button id="newGameBtn" class="new-game">New Game</button>
+        </div>
+      </header>
+
+      <main class="game-board"></main>
+
+      <footer class="game-info">
+        <div>Time: <span id="time">0:00</span></div>
+        <div>Moves: <span id="moves">0</span></div>
+      </footer>
+    </section>
+
+    <script src="src/main.ts"></script>
+  </body>
+</html>
