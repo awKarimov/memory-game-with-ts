@@ -46,7 +46,7 @@ let secondValue: string | number | null = null;
 let matchedPairs = 0;
 let moves = 0;
 let seconds = 0;
-let timer: number | undefined;
+let timer: number;
 
 function startTimer() {
   timer = setInterval(() => {
@@ -252,8 +252,7 @@ startBtn.addEventListener("click", () => {
 });
 
 restartBtn.addEventListener("click", () => {
-  const ok = confirm("Restart qilmoqchimisiz?");
-  if (!ok) return;
+  if (!confirm("O`yinni qaytadan boshlamoqchimisiz?")) return;
 
   stopTimer();
   generateCards();
@@ -261,7 +260,7 @@ restartBtn.addEventListener("click", () => {
 });
 
 newGameBtn.addEventListener("click", () => {
-  const ok = confirm("New game boshlamoqchimisiz?");
+  const ok = confirm("Yangi o'yin boshlamoqchimisiz?");
   if (!ok) return;
 
   stopTimer();
